@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4c4c4c">
+
+    <LinearLayout
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_60"
+        android:background="@drawable/shape_item_list"
+        android:gravity="center">
+
+        <com.example.admin.prclosechat_android.view.AutoResizeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textSize="@dimen/textsize_24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/div1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/size_216dp"
+            android:layout_height="@dimen/size_206dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_avt_call"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_avtcall" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lnCallOff"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:text="Outgoing Call"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lnCallOff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_60"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/shape_button_calloff"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_call" />
+    </LinearLayout>
+</RelativeLayout>

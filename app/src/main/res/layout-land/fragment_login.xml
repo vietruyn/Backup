@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:layout_weight="1">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.6"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:background="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/tvNameApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:text="@string/name_app"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_25sp" />
+
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="@dimen/size_20dp">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:background="@drawable/shape_editext"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textColor="@color/back1"
+                android:hint="@string/email"
+
+                android:paddingLeft="@dimen/size_10dp"
+                android:textColorHint="@color/text_hint" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:background="@drawable/shape_editext"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textColor="@color/back1"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/size_10dp"
+                android:textColorHint="@color/text_hint" />
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48dp"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:background="@drawable/shape_button_sigin"
+                android:paddingLeft="@dimen/size_10dp"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_13sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

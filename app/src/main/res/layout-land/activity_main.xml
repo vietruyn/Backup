@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lnTabLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:background="@drawable/img_background"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/lnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="selectFrag">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_21sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="selectFrag">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_21sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frm"
+        android:name="com.example.admin.prclosechat_android.fragment.LoginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lnTabLogin">
+
+    </FrameLayout>
+</RelativeLayout>

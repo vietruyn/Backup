@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rlHideKeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:background="@drawable/ic_logo" />
+
+            <TextView
+                android:id="@+id/tvNameApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgLogo"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:text="@string/name_app"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNameApp"
+                android:layout_marginLeft="@dimen/size_12dp"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:background="@drawable/shape_editext"
+                    android:hint="@string/fullname"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:textColor="@color/back1"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColorHint="@color/text_hint" />
+
+                <EditText
+                    android:id="@+id/edtPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:background="@drawable/shape_editext"
+                    android:hint="@string/phonenumber"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColor="@color/back1"
+                    android:textColorHint="@color/text_hint" />
+
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:background="@drawable/shape_editext"
+                    android:hint="@string/email"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:textColor="@color/back1"
+                    android:textColorHint="@color/text_hint" />
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:background="@drawable/shape_editext"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:textColor="@color/back1"
+                    android:textColorHint="@color/text_hint" />
+
+                <EditText
+                    android:id="@+id/edtConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:background="@drawable/shape_editext"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:textColor="@color/back1"
+                    android:textColorHint="@color/text_hint" />
+
+                <Button
+                    android:id="@+id/btnJoinNow"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_48dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:background="@drawable/shape_button_sigin"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:text="@string/join_now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
